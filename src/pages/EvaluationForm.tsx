@@ -102,7 +102,7 @@ const EvaluationForm = () => {
                   {options2.map((option, optionIndex) => (
                     <button
                       key={optionIndex}
-                      onClick={() => handleAnswer(`suicide-${index}`, optionIndex)}
+                      onClick={() => handleAnswer(index, optionIndex)}
                       className={`px-6 py-3 rounded-full text-sm font-medium transition-colors ${
                         answers[`suicide-${index}`] === optionIndex
                           ? 'bg-orange-400 text-white'

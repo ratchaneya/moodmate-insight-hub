@@ -15,6 +15,10 @@ const TermsPrivacy = () => {
     }
   };
 
+  const handleCheckboxChange = (checked: boolean | "indeterminate") => {
+    setAccepted(checked === true);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-orange-100 flex flex-col px-6 py-8">
       {/* Header */}
@@ -60,7 +64,7 @@ const TermsPrivacy = () => {
           <Checkbox
             id="accept-terms"
             checked={accepted}
-            onCheckedChange={setAccepted}
+            onCheckedChange={handleCheckboxChange}
             className="mt-1"
           />
           <label htmlFor="accept-terms" className="text-sm text-gray-700 leading-relaxed">
