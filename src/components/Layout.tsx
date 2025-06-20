@@ -18,7 +18,15 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     '/signup', 
     '/personal-info', 
     '/personal-info-2', 
-    '/password-login'
+    '/password-login',
+    '/terms-privacy',
+    '/permission-request',
+    '/home',
+    '/life-diary',
+    '/chat-bot',
+    '/evaluation-form',
+    '/evaluation-results',
+    '/podcast'
   ];
   
   const showNav = !noNavPages.includes(location.pathname);
