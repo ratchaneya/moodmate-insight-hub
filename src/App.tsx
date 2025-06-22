@@ -16,6 +16,9 @@ import TermsPrivacy from "./pages/TermsPrivacy";
 import PermissionRequest from "./pages/PermissionRequest";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
+import Calendar from "./pages/Calendar";
+import Analytics from "./pages/Analytics";
+import Settings from "./pages/Settings";
 import LifeDiary from "./pages/LifeDiary";
 import ChatBot from "./pages/ChatBot";
 import EvaluationForm from "./pages/EvaluationForm";
@@ -44,6 +47,9 @@ const App = () => (
             <Route path="/permission-request" element={<PermissionRequest />} />
             <Route path="/home" element={<Home />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/calendar" element={<Calendar />} />
+            <Route path="/analytics" element={<Analytics />} />
+            <Route path="/settings" element={<Settings />} />
             <Route path="/life-diary" element={<LifeDiary />} />
             <Route path="/chat-bot" element={<ChatBot />} />
             <Route path="/evaluation-form" element={<EvaluationForm />} />

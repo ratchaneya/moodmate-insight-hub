@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Card } from '@/components/ui/card';
@@ -42,7 +41,7 @@ const Home = () => {
         </div>
         
         <div className="flex items-center space-x-4">
-          <button onClick={() => navigate('/dashboard')}>
+          <button onClick={() => navigate('/analytics')}>
             <BarChart3 className="w-6 h-6 text-gray-600" />
           </button>
           <button onClick={() => navigate('/calendar')}>

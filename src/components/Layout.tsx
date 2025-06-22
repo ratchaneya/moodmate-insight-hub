@@ -26,7 +26,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     '/chat-bot',
     '/evaluation-form',
     '/evaluation-results',
-    '/podcast'
+    '/podcast',
+    '/calendar',
+    '/analytics',
+    '/settings'
   ];
   
   const showNav = !noNavPages.includes(location.pathname);
