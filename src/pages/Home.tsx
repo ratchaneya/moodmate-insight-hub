@@ -1,10 +1,10 @@
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Settings, BarChart3, Calendar, ChevronDown, Edit3 } from 'lucide-react';
-import RiskIndicator from '@/components/RiskIndicator';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -72,7 +72,7 @@ const Home = () => {
           <h2 className="text-lg font-semibold text-green-600">April 2025</h2>
         </div>
 
-        {/* Risk Assessment Card */}
+        {/* Risk Assessment Card with Mascot */}
         <Card className="p-6 bg-gradient-to-r from-pink-100 to-green-100">
           <div className="flex items-center justify-between">
             <div>
@@ -87,9 +87,11 @@ const Home = () => {
                 </div>
               </div>
               <div className="w-20 h-20">
-                <div className="w-full h-full bg-yellow-300 rounded-full flex items-center justify-center">
-                  <div className="text-2xl">🐕</div>
-                </div>
+                <img 
+                  src="/lovable-uploads/86d4f92a-42dd-4769-85f6-4b866fb4b8a4.png" 
+                  alt="MoodMate Mascot" 
+                  className="w-full h-full object-contain"
+                />
               </div>
             </div>
           </div>
@@ -152,8 +154,12 @@ const Home = () => {
                 <div className="flex items-center space-x-2">
                   <span className="text-2xl">{moodEmojis[day.mood]}</span>
                 </div>
-                <div className="w-8 h-8 bg-yellow-300 rounded-full flex items-center justify-center">
-                  <span className="text-xl">🐕</span>
+                <div className="w-8 h-8">
+                  <img 
+                    src="/lovable-uploads/86d4f92a-42dd-4769-85f6-4b866fb4b8a4.png" 
+                    alt="MoodMate Mascot" 
+                    className="w-full h-full object-contain"
+                  />
                 </div>
               </div>
               

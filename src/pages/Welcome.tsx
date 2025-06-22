@@ -17,22 +17,13 @@ const Welcome = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 flex flex-col items-center justify-center px-4">
       <div className="flex flex-col items-center space-y-8">
-        {/* Logo */}
+        {/* Mascot Logo */}
         <div className="relative">
-          <div className="w-32 h-32 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center shadow-lg">
-            <div className="w-24 h-24 rounded-full bg-gradient-to-br from-yellow-300 to-orange-400 flex items-center justify-center relative">
-              {/* Character face */}
-              <div className="relative">
-                <div className="w-2 h-2 bg-green-600 rounded-full absolute -top-1 left-2"></div>
-                <div className="w-2 h-2 bg-green-600 rounded-full absolute -top-1 right-2"></div>
-                <div className="w-3 h-1 bg-orange-500 rounded-full absolute top-1"></div>
-              </div>
-              {/* Heart icon */}
-              <div className="absolute -top-3 -right-3 w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center">
-                <Heart className="w-4 h-4 text-white fill-white" />
-              </div>
-            </div>
-          </div>
+          <img 
+            src="/lovable-uploads/86d4f92a-42dd-4769-85f6-4b866fb4b8a4.png" 
+            alt="MoodMate Mascot" 
+            className="w-32 h-32 object-contain"
+          />
         </div>
 
         {/* App Name */}
